@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:plantapp/widgets/CategoryWidget.dart';
 import 'package:plantapp/widgets/discount_banner.dart';
+import 'package:plantapp/widgets/itemcard.dart';
+import 'package:plantapp/widgets/itemsection.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -31,7 +33,9 @@ favorite plants
                       )
                     ]),
                 BannerWidget(),
-                Category()
+                Category(),
+                SizedBox(height: 15),
+                Items(),
               ],
             ),
           ),

@@ -12,6 +12,7 @@ class _CategoryState extends State<Category> {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
+      physics: BouncingScrollPhysics(),
       scrollDirection: Axis.horizontal,
       child: Row(
         children: [
