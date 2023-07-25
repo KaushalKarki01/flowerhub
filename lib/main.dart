@@ -14,8 +14,8 @@ class App extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        fontFamily: GoogleFonts.mulish().fontFamily,
-      ),
+          fontFamily: GoogleFonts.mulish().fontFamily,
+          primarySwatch: Colors.green),
       home: SplashPage(),
     );
   }
