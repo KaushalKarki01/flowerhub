@@ -39,6 +39,7 @@ class _Login_FormState extends State<Login_Form> {
                 Icons.email,
               ),
             ),
+            keyboardType: TextInputType.emailAddress,
           ),
           const SizedBox(height: 20),
           TextFormField(

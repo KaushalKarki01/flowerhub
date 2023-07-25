@@ -25,14 +25,25 @@ class Login extends StatelessWidget {
                         height: 40,
                         width: 40,
                       ),
-                      Text(
-                        'FLOWER HUB',
-                        style: TextStyle(
-                          fontSize: 34,
-                          fontWeight: FontWeight.w700,
-                          color: Color.fromARGB(255, 199, 86, 30),
+                      RichText(
+                          text: TextSpan(children: [
+                        TextSpan(
+                          text: 'FLOWER ',
+                          style: TextStyle(
+                            fontSize: 34,
+                            fontWeight: FontWeight.w700,
+                            color: Color.fromARGB(255, 199, 86, 30),
+                          ),
                         ),
-                      ),
+                        TextSpan(
+                          text: 'HUB',
+                          style: TextStyle(
+                            fontSize: 34,
+                            fontWeight: FontWeight.w700,
+                            color: Colors.black,
+                          ),
+                        ),
+                      ]))
                     ],
                   )
                 ],

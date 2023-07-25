@@ -12,6 +12,7 @@ class SplashPage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
+              SizedBox(height: 40),
               const Text(
                 'Let\s plant with us',
                 style: TextStyle(
@@ -31,6 +32,7 @@ class SplashPage extends StatelessWidget {
                 width: 450,
                 child: Image.asset('assets/plant.jpg'),
               ),
+              SizedBox(height: 20),
               GestureDetector(
                 onTap: () {
                   Navigator.push(context,
