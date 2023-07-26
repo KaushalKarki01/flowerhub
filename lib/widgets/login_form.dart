@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:plantapp/pages/home.dart';
+import 'package:plantapp/pages/landing.dart';
 
 class Login_Form extends StatefulWidget {
   const Login_Form({super.key});
@@ -81,7 +81,7 @@ class _Login_FormState extends State<Login_Form> {
                 if (_formkey.currentState!.validate()) {
                   Navigator.of(context).push(
                     MaterialPageRoute(
-                      builder: (_) => Home(),
+                      builder: (_) => LandingPage(),
                     ),
                   );
                 }

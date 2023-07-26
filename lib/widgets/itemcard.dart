@@ -33,6 +33,13 @@ class ItemCard extends StatelessWidget {
           Text(
             'IDR $price',
             style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+          ),
+          SizedBox(height: 5),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              ElevatedButton(onPressed: () {}, child: Text('Add to cart')),
+            ],
           )
         ],
       ),
