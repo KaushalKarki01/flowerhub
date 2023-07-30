@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:plantapp/widgets/container.dart';
+import 'package:plantapp/widgets/categories/container.dart';
 
 class Category extends StatefulWidget {
   const Category({super.key});

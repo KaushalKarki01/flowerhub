@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:plantapp/widgets/CategoryWidget.dart';
+import 'package:plantapp/widgets/categories/CategoryWidget.dart';
 import 'package:plantapp/widgets/discount_banner.dart';
 import 'package:plantapp/widgets/itemsection.dart';
+import 'package:plantapp/widgets/searchbar.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -15,22 +16,8 @@ class Home extends StatelessWidget {
             padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
             child: Column(
               children: [
-                Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        '''Find your
-favorite plants
-                    ''',
-                        style: TextStyle(
-                          fontSize: 28,
-                        ),
-                      ),
-                      Icon(
-                        Icons.search,
-                        size: 35,
-                      )
-                    ]),
+                SearchWidget(),
+                const SizedBox(height: 15),
                 BannerWidget(),
                 Category(),
                 SizedBox(height: 15),

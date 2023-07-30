@@ -30,7 +30,7 @@ class SplashPage extends StatelessWidget {
               SizedBox(
                 height: 450,
                 width: 450,
-                child: Image.asset('assets/plant.jpg'),
+                child: Image.asset('assets/butterfly.png'),
               ),
               SizedBox(height: 20),
               GestureDetector(
